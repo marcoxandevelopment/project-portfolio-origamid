@@ -131,14 +131,14 @@ main {
 }
 
 .content-main-text a {
-  width: 22.5rem;
+  width: 24rem;
   margin-top: 1rem;
   color: #fff;
   font-size: 1.25rem;
   font-family: Montserrat;
   font-weight: 600;
   line-height: 112.5%;
-  display: block;
+  display: inline-block;
   padding: 1rem;
   border-radius: 6px;
   border-radius: 6px;
@@ -489,4 +489,8 @@ main {
   font-size: 1.2rem;
   font-family: Montserrat;
   line-height: 112.5%;
+}
+
+.h1-experience-mobile {
+  margin-top: 2.3rem;
 }
