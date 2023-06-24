@@ -120,7 +120,7 @@ main {
   top: -20px;
   left: -20px;
 
-  background: url(./img/favicon\ 1.svg) no-repeat center;
+  background: url(favicon\ 1.svg) no-repeat center;
 }
 
 .content-main-text > p {
@@ -346,7 +346,7 @@ main {
   height: 120vh;
   display: grid;
   place-content: center;
-  background: url(./img/FORMAÇÃO.svg) no-repeat center;
+  background: url(FORMAÇÃO.svg) no-repeat center;
   background-size: cover;
 }
 
