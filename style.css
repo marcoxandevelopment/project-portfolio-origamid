@@ -120,7 +120,7 @@ main {
   top: -20px;
   left: -20px;
 
-  background: url(favicon\ 1.svg) no-repeat center;
+  background: url(./img/favicon\ 1.svg) no-repeat center;
 }
 
 .content-main-text > p {
@@ -150,14 +150,16 @@ main {
 }
 
 .content-main-text a {
-  margin-bottom: 4rem;
+  margin-bottom: 3.2rem;
   color: rgb(255, 255, 255);
 }
-
+.container-box-experience p {
+  margin-bottom: 1.5rem;
+}
 .section-experience {
   width: 100%;
   padding: 6rem;
-  height: 95vh;
+  height: 100vh;
   display: grid;
   place-content: center;
 }
@@ -272,6 +274,10 @@ main {
   h1.h1-experience-mobile-form {
     display: block;
   }
+  div.container-footer-info {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
 }
 
 /*RESPONSIVO*/
@@ -303,13 +309,16 @@ main {
   div.container-contact-book h3 {
     font-size: 1.3rem;
   }
+  .footer-list li {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .lobo-mainimg {
     width: 200px;
   }
   div.content-experiencia-h1 p {
-    padding: 0.5rem;
+    padding: 20rem;
     color: var(--cinza-7, #636363);
     font-size: 1.6rem;
     font-family: Montserrat;
@@ -318,15 +327,26 @@ main {
   }
 }
 
+@media screen and (max-width: 300px) {
+  .container-box {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .h1-experience-mobile h1 {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+
 .section-formaçao {
   position: relative;
   text-align: left;
   width: 100%;
   padding: 2rem;
-  height: 110vh;
+  height: 120vh;
   display: grid;
   place-content: center;
-  background: url(FORMAÇÃO.svg) no-repeat center;
+  background: url(./img/FORMAÇÃO.svg) no-repeat center;
   background-size: cover;
 }
 
@@ -423,8 +443,6 @@ main {
   width: 70px;
 }
 
-
-
 .content-experiencia-h1 p {
   padding: 0.5rem;
 
@@ -434,21 +452,41 @@ main {
   font-weight: 600;
   line-height: 112.5%;
 }
+#contato {
+  background: #000;
+}
 
-.container-contact-book h3 {
-  color: #ffffff;
+.footer-container-box {
+  background: #00000000;
+}
+
+.container-footer-info {
+  max-width: 1200px;
+  padding: 2.4rem 1.2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.text-footer {
+  color: var(--cinza-7, #7a7a7a);
+  font-size: 2rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 112.5%;
+}
+
+.footer-list {
+  color: #fff;
   font-size: 2rem;
   font-family: Montserrat;
   line-height: 112.5%;
-
-  margin-bottom: 2rem;
 }
 
-.container-box-flex {
-  margin-left: 0rem;
-  gap: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.rights-box {
+  color: #c0c0c0;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  line-height: 112.5%;
 }
