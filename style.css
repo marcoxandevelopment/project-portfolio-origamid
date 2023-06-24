@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+span {
+  font-weight: 800;
+  color: #000;
+}
+
+:root {
+  color: var(--cinza-6, #8f8f8f);
+  color: var(--cinza-7, #7a7a7a);
+  color: var(--cinza-8, #666);
+  color: var(--cinza-9, #525252);
+  color: var(--cinza-10, #3d3d3d);
+  color: var(--cinza-11, #292929);
+  color: var(--cinza-12, #141414);
+  color: var(--cinza-13, #000);
+  color: var(--roxo-2, #bf9fde);
+  color: var(--roxo-3, #af8ed0);
+  color: var(--roxo-4, #9a78bc);
+  color: var(--roxo-5, #825fa4);
+  color: var(--roxo-6, #6f4c93);
+  color: var(--roxo-7, #5f3d82);
+  color: var(--roxo-8, #543177);
+  color: var(--roxo-9, #432066);
+  color: var(--roxo-10, #361656);
+  color: var(--roxo-11, #240a3e);
+  color: var(--roxo-12, #17042b);
+  color: var(--roxo-13, #0d001a);
+}
+
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  padding: 3.2rem;
+  flex: 1;
+}
+
+.logo-lobo {
+  margin-left: 6rem;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.nav-list {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.nav-list li a {
+  margin: 2.3rem;
+  font-size: 1.4rem;
+  font-family: Montserrat;
+  font-weight: 300;
+  color: var(--cinza-12);
+}
+
+main {
+  width: 100%;
+  padding: 2.2rem;
+  display: grid;
+  place-content: center;
+}
+
+.lobo-mainimg {
+  margin-left: 1.4rem;
+  width: 350px;
+}
+
+.container-box {
+  position: relative;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  max-width: 1000px;
+  align-items: center;
+}
+.icon-menu {
+  display: none;
+}
+
+.content-main-text {
+  position: relative;
+}
+.content-main-text > h1 {
+  color: var(--cinza-12, #141414);
+  font-size: 4rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 112.5%;
+  margin-bottom: 1.2rem;
+}
+
+.content-main-text > h1::before {
+  content: "";
+  width: 130px;
+  height: 100px;
+
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+
+  background: url(./img/favicon\ 1.svg) no-repeat center;
+}
+
+.content-main-text > p {
+  color: var(--cinza-9, #525252);
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-family: Montserrat;
+}
+
+.content-main-text a {
+  width: 22.5rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 112.5%;
+  display: block;
+  padding: 1rem;
+  border-radius: 6px;
+  border-radius: 6px;
+  background: var(--roxo-8, linear-gradient(180deg, #543177 0%, #5f00bd 100%));
+}
+
+.content-main-text a:hover {
+  filter: drop-shadow(2px 0px 2px #543177);
+}
+
+.content-main-text a {
+  color: rgb(255, 255, 255);
+}
+
+.section-experience {
+  width: 100%;
+  padding: 6rem;
+  height: 95vh;
+  display: grid;
+  place-content: center;
+}
+
+.content-experiencia-text {
+  padding: 2rem;
+  position: relative;
+}
+
+.container-box-experience {
+  margin: 2rem;
+}
+
+.content-experiencia-text-competencias {
+  padding: 0.4rem;
+  color: #525252;
+  font-size: 1.675rem;
+
+  font-family: Montserrat;
+  line-height: 112.5%;
+}
+
+.container-box-experience h4 {
+  color: var(--cinza-13, #0e0e0e);
+  margin-bottom: 0.6rem;
+  font-size: 1.25rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 112.5%;
+}
+
+.container-box-experience p {
+  color: var(--cinza-8, #666);
+  font-size: 1.04rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 112.5%;
+}
+
+.icon-zap {
+  color: #525252;
+}
+
+.content-experiencia-h1 > h1 {
+  color: var(--cinza-6, #8f8f8f);
+  font-size: 8.75rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 112.5%;
+}
+
+.h1-experience-mobile {
+  display: none;
+  font-size: 4rem;
+}
+
+.container-box-experience > h4::before {
+  content: "";
+  width: 0.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 25px;
+  background: linear-gradient(180deg, #6f4c93 0%, #240a3e 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .container-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .lobo-mainimg {
+    width: 220px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-list {
+    display: none;
+  }
+  .icon-menu {
+    display: flex;
+  }
+  .content-main-text {
+    margin: 0 auto;
+  }
+  .content-main-text > h1 {
+    margin: 0;
+  }
+  div.content-experiencia-h1 > h1 {
+    color: #0d001a;
+    font-size: 2.75rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 112.5%;
+  }
+  h1.h1-experience {
+    display: none;
+  }
+  h1.h1-experience-form {
+    display: none;
+  }
+  h1.h1-experience-mobile {
+    display: block;
+    font-size: 4rem;
+  }
+  h1.h1-experience-mobile-form {
+    display: block;
+  }
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width: 500px) {
+  .content-main-text > h1 {
+    font-size: 2.2rem;
+  }
+  .container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+  p.content-experiencia-text-competencias {
+    font-size: 1.3rem;
+  }
+  h1.h1-experience-mobile {
+    display: block;
+  }
+  h1.h1-experience {
+    display: none;
+  }
+
+  section.section-experience {
+    padding: 1.3rem;
+  }
+  div.container-contact-book h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .lobo-mainimg {
+    width: 200px;
+  }
+  div.content-experiencia-h1 p {
+    padding: 0.5rem;
+    color: var(--cinza-7, #636363);
+    font-size: 1.6rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 112.5%;
+  }
+}
+
+.section-formaçao {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  padding: 2rem;
+  height: 110vh;
+  display: grid;
+  place-content: center;
+  background: url(./img/FORMAÇÃO.svg) no-repeat center;
+  background-size: cover;
+}
+
+.h1-experience-mobile-form {
+  display: none;
+  font-size: 4rem;
+}
+
+.h1-experience-form {
+  color: var(--cinza-1, #ededed);
+  font-size: 7.75rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 112.5%;
+}
+
+.h1-experience-mobile-form {
+  margin-top: 0.4rem;
+  color: var(--cinza-1, #ededed);
+  font-size: 3.75rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 112.5%;
+}
+
+.content-form-flexbox {
+  display: flex;
+
+  flex: 1;
+  border-radius: 6px;
+  background: var(--cinza-13, #000);
+  padding: 2rem;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.content-form-flexbox > h3 {
+  color: var(--cinza-6, #8f8f8f);
+  font-size: 1.25rem;
+  font-family: Montserrat;
+  font-weight: 100;
+  line-height: 112.5%;
+}
+
+.content-form-flexbox > h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: Montserrat;
+  font-weight: 900;
+  line-height: 112.5%;
+}
+
+.content-form-flexbox > h4 {
+  color: #6f4c93;
+  font-size: 1.25rem;
+  font-family: Montserrat;
+  line-height: 112.5%;
+}
+
+.container-box-diff {
+  position: relative;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  max-width: 1000px;
+  align-items: center;
+}
+
+.content-form-flexbox::before {
+  content: "";
+  width: 0.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: -3px;
+  background: linear-gradient(180deg, #6f4c93 0%, #240a3e 100%);
+}
+
+.container-image-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.container-image-form img {
+  width: 70px;
+}
+
+footer {
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 70vh;
+  background: #000;
+}
+
+.content-experiencia-h1 p {
+  padding: 0.5rem;
+  max-width: 500px;
+
+  color: var(--cinza-7, #636363);
+  font-size: 2rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 112.5%;
+}
+
+.container-contact-book h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: Montserrat;
+  line-height: 112.5%;
+
+  margin-bottom: 2rem;
+}
+
+.container-box-flex {
+  margin-left: 0rem;
+  gap: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
