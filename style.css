@@ -150,6 +150,7 @@ main {
 }
 
 .content-main-text a {
+  margin-bottom: 4rem;
   color: rgb(255, 255, 255);
 }
 
@@ -422,19 +423,10 @@ main {
   width: 70px;
 }
 
-footer {
-  width: 100%;
-  padding: 2.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 70vh;
-  background: #000;
-}
+
 
 .content-experiencia-h1 p {
   padding: 0.5rem;
-  max-width: 500px;
 
   color: var(--cinza-7, #636363);
   font-size: 2rem;
@@ -454,7 +446,7 @@ footer {
 
 .container-box-flex {
   margin-left: 0rem;
-  gap: 4rem;
+  gap: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
